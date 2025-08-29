@@ -27,7 +27,7 @@ exports.getTeamMemberById = async (req, res) => {
 
 exports.createTeamMember = async (req, res) => {
   try {
-    const { name, email, phone, position, facebookUrl, linkedinUrl, imageUrl } = req.body;
+    const { name, email, phone, position, facebookUrl, linkedinUrl } = req.body;
     
     // Create user first
     const bcrypt = require('bcrypt');
@@ -46,8 +46,7 @@ exports.createTeamMember = async (req, res) => {
       userId,
       position,
       facebookUrl,
-      linkedinUrl,
-      imageUrl
+      linkedinUrl
     });
     
     const teamMember = await TeamMember.findById(userId);

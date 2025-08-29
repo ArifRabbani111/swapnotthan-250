@@ -31,12 +31,14 @@ router.get('/dashboard', verifyToken, isAdmin, async (req, res) => {
 // Manage events
 router.get('/events', verifyToken, isAdmin, eventController.getAllEvents);
 router.post('/events', verifyToken, isAdmin, eventController.createEvent);
+router.get('/events/:id', verifyToken, isAdmin, eventController.getEventById);
 router.put('/events/:id', verifyToken, isAdmin, eventController.updateEvent);
 router.delete('/events/:id', verifyToken, isAdmin, eventController.deleteEvent);
 
 // Manage team members
 router.get('/team', verifyToken, isAdmin, teamController.getAllTeamMembers);
 router.post('/team', verifyToken, isAdmin, teamController.createTeamMember);
+router.get('/team/:id', verifyToken, isAdmin, teamController.getTeamMemberById);
 router.put('/team/:id', verifyToken, isAdmin, teamController.updateTeamMember);
 router.delete('/team/:id', verifyToken, isAdmin, teamController.deleteTeamMember);
 

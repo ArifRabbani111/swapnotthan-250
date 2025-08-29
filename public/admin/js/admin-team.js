@@ -57,7 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function closeModal() { modal.style.display = "none"; }
 
     document.querySelector(".close").onclick = closeModal;
-    window.onclick = e => e.target === modal && closeModal();
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });      
 
     // Load team members
     async function loadTeamMembers() {
