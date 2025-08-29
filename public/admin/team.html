@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Team - Swapnotthan Admin</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-sidebar">
+            <div class="admin-logo">
+                <h1>Swapnotthan</h1>
+                <p>Admin Panel</p>
+            </div>
+            
+            <div class="admin-user">
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-info">
+                    <h3 id="adminName">Admin User</h3>
+                    <p>Administrator</p>
+                </div>
+            </div>
+            
+            <ul class="admin-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Manage Events</a></li>
+                <li><a href="team.html" class="active"><i class="fas fa-users"></i> Manage Team</a></li>
+                <li><a href="donations.html"><i class="fas fa-donate"></i> Manage Donations</a></li>
+                <li><a href="messages.html"><i class="fas fa-envelope"></i> Contact Messages</a></li>
+                <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        
+        <div class="admin-content">
+            <div class="admin-header">
+                <h1>Manage Team</h1>
+                <div class="admin-actions">
+                    <button class="btn-primary" id="addTeamMemberBtn"><i class="fas fa-plus"></i> Add Team Member</button>
+                </div>
+            </div>
+            
+            <div class="admin-table-container">
+                <div class="table-header">
+                    <h2>Team Members</h2>
+                    <div class="table-actions">
+                        <input type="text" id="searchTeam" placeholder="Search team members...">
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teamTableBody">
+                            <tr>
+                                <td colspan="4" class="loading">Loading team members...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Team Member Modal -->
+    <div id="teamMemberModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Add Team Member</h2>
+            <form id="teamMemberForm">
+                <input type="hidden" id="teamMemberId">
+                <div class="form-group">
+                    <label for="teamMemberName">Name</label>
+                    <input type="text" id="teamMemberName" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMemberEmail">Email</label>
+                    <input type="email" id="teamMemberEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMemberPhone">Phone</label>
+                    <input type="tel" id="teamMemberPhone">
+                </div>
+                <div class="form-group">
+                    <label for="teamMemberPosition">Position</label>
+                    <input type="text" id="teamMemberPosition" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMemberFacebook">Facebook URL</label>
+                    <input type="url" id="teamMemberFacebook">
+                </div>
+                <div class="form-group">
+                    <label for="teamMemberLinkedin">LinkedIn URL</label>
+                    <input type="url" id="teamMemberLinkedin">
+                </div>
+                <button type="submit" class="btn-primary">Save Team Member</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/admin-team.js"></script>
+</body>
+</html>

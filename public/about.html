@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Swapnotthan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as home page) -->
+    <nav class="navbar">
+        <div class="logo">Swapnotthan</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="wings.html">Our Wings</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="#" class="call-now-btn">Call now</a>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1>About Us</h1>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Swapnotthan was founded in 2010 with just 10 passionate volunteers who wanted to make a difference in their community. Over the years, our organization has grown significantly, expanding to three dedicated departments and now serving over 5000 people annually.</p>
+                    
+                    <h2>Our Mission & Vision</h2>
+                    <p>To create a compassionate society where every child has access to education, healthcare, and opportunities to thrive. We envision a future where no child is left behind due to economic disadvantages.</p>
+                    
+                    <div class="impact-stats">
+                        <div class="stat-card">
+                            <h3>5000+</h3>
+                            <p>People Helped Annually</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>200+</h3>
+                            <p>Active Volunteers</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>12+</h3>
+                            <p>Years of Service</p>
+                        </div>
+                    </div>
+                    
+                    <button id="ourJourneyBtn" class="btn-primary">Our Journey</button>
+                </div>
+                
+                <div class="about-slideshow">
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="images/about1.jpg" alt="Swapnotthan volunteers in action">
+                        </div>
+                        <div class="slide">
+                            <img src="images/about2.jpg" alt="Children benefiting from our programs">
+                        </div>
+                        <div class="slide">
+                            <img src="images/about3.jpg" alt="Community event organized by Swapnotthan">
+                        </div>
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="slide-dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassion</h3>
+                    <p>We believe in showing empathy and kindness to everyone we serve, regardless of their background.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We operate with transparency and honesty in all our activities and financial dealings.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>We foster a sense of belonging and work together to create positive change.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We constantly seek new and better ways to address the challenges facing our community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as home page) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Swapnotthan</h3>
+                <p>We are a voluntary charity organization based at Shahjalal University of Science and Technology, dedicated to helping disadvantaged children in our community.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="wings.html">Our Wings</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Shahjalal University of Science and Technology, Sylhet-3114</p>
+                <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+                <p><i class="fas fa-envelope"></i> info@swapnotthan.org</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Swapnotthan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Journey Timeline Modal -->
+    <div id="journeyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2010</div>
+                    <div class="timeline-content">
+                        <h3>Foundation</h3>
+                        <p>Swapnotthan was founded with 10 volunteers at Shahjalal University of Science and Technology.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2013</div>
+                    <div class="timeline-content">
+                        <h3>First Major Campaign</h3>
+                        <p>Launched our first major fundraising campaign for underprivileged children's education.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content">
+                        <h3>Expansion</h3>
+                        <p>Expanded our operations to include Blood Wing and Education Wing as separate departments.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Growth</h3>
+                        <p>Grew to three departments serving over 5000 people annually despite pandemic challenges.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Digital Transformation</h3>
+                        <p>Launched our new website and digital platforms to reach more beneficiaries and volunteers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/about.js"></script>
+</body>
+</html>

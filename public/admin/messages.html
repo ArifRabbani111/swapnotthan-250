@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages - Swapnotthan Admin</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-sidebar">
+            <div class="admin-logo">
+                <h1>Swapnotthan</h1>
+                <p>Admin Panel</p>
+            </div>
+            
+            <div class="admin-user">
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-info">
+                    <h3 id="adminName">Admin User</h3>
+                    <p>Administrator</p>
+                </div>
+            </div>
+            
+            <ul class="admin-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Manage Events</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Manage Team</a></li>
+                <li><a href="donations.html"><i class="fas fa-donate"></i> Manage Donations</a></li>
+                <li><a href="messages.html" class="active"><i class="fas fa-envelope"></i> Contact Messages</a></li>
+                <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        
+        <div class="admin-content">
+            <div class="admin-header">
+                <h1>Contact Messages</h1>
+                <div class="admin-actions">
+                    <button class="btn-refresh" id="refreshMessages"><i class="fas fa-sync-alt"></i> Refresh</button>
+                </div>
+            </div>
+            
+            <div class="admin-table-container">
+                <div class="table-header">
+                    <h2>All Messages</h2>
+                    <div class="table-actions">
+                        <input type="text" id="searchMessages" placeholder="Search messages...">
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="messagesTableBody">
+                            <tr>
+                                <td colspan="5" class="loading">Loading messages...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Message Details</h2>
+            <div id="messageDetails">
+                <!-- Message details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin-messages.js"></script>
+</body>
+</html>

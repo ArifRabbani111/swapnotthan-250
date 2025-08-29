@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnotthan - Empowering Communities Through Action</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Swapnotthan</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="wings.html">Our Wings</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="#" class="call-now-btn">Call now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Communities Through Action</h1>
+            <p>Join us in making a difference! Volunteer or donate to support communities in Sylhet.</p>
+            <div class="hero-buttons">
+                <button id="joinUsBtn" class="btn-primary">Join Us</button>
+                <button id="donateNowBtn" class="btn-secondary">Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Volunteer</h3>
+                    <p>Join our team of dedicated volunteers and make a direct impact in your community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <h3>Donate</h3>
+                    <p>Your contributions help us provide essential services to those in need.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Events</h3>
+                    <p>Participate in our events and help us spread awareness about important causes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Swapnotthan</h3>
+                <p>We are a voluntary charity organization based at Shahjalal University of Science and Technology, dedicated to helping disadvantaged children in our community.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="wings.html">Our Wings</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Shahjalal University of Science and Technology, Sylhet-3114</p>
+                <p><i class="fas fa-phone"></i> +880 1976-007207</p>
+                <p><i class="fas fa-envelope"></i> swapnotthan@sust.edu </p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/swapnotthan"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/swapnotthan/"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Swapnotthan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Join Us Modal -->
+    <div id="joinUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join Swapnotthan as a Volunteer</h2>
+            <form id="volunteerForm">
+                <div class="form-group">
+                    <label for="volName">Full Name</label>
+                    <input type="text" id="volName" required>
+                </div>
+                <div class="form-group">
+                    <label for="volEmail">Email</label>
+                    <input type="email" id="volEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="volPhone">Phone Number</label>
+                    <input type="tel" id="volPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="volPassword">Password</label>
+                    <input type="password" id="volPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="volInterest">Area of Interest</label>
+                    <select id="volInterest">
+                        <option value="blood">Blood Wing</option>
+                        <option value="education">Education Wing</option>
+                        <option value="charity">Charity Wing</option>
+                        <option value="general">General Volunteer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Donate Now Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <div class="form-group">
+                    <label for="donorName">Full Name</label>
+                    <input type="text" id="donorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="donorEmail">Email</label>
+                    <input type="email" id="donorEmail">
+                </div>
+                <div class="form-group">
+                    <label for="donorPhone">Phone Number</label>
+                    <input type="tel" id="donorPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="donationAmount">Amount (BDT)</label>
+                    <input type="number" id="donationAmount" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="bkashNumber">Bkash Number</label>
+                    <input type="text" id="bkashNumber" placeholder="01xxxxxxxxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="transactionId">Transaction ID</label>
+                    <input type="text" id="transactionId" required>
+                </div>
+                <div class="form-group">
+                    <label for="donationPurpose">Donation Purpose</label>
+                    <select id="donationPurpose">
+                        <option value="general">General Donation</option>
+                        <option value="education">Education Wing</option>
+                        <option value="blood">Blood Wing</option>
+                        <option value="charity">Charity Wing</option>
+                        <option value="event">Specific Event</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Submit Donation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
