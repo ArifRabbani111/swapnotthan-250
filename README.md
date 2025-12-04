@@ -2,6 +2,19 @@
 
 Professional, minimal web application for publishing and managing events, teams, wings, donations and contact messages. Provides a public-facing static site and a JSON API with an admin panel for management.
 
+
+
+🚀 Live Demo
+
+Access the deployed project here:
+
+Live Site: https://swapnotthan-250.vercel.app/
+
+🔗 Project Links
+
+GitHub Repository: https://github.com/ArifRabbani111/swapnotthan-250
+
+
 ---
 
 ## Table of Contents
